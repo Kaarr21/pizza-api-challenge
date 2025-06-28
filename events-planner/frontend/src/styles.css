@@ -1,0 +1,33 @@
+/* src/styles.css */
+:root {
+  --bg-light: #fff;
+  --text-light: #111;
+  --bg-dark:  #222;
+  --text-dark: #eee;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+nav {
+  padding: 1rem;
+  background: #444;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a, nav button {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
